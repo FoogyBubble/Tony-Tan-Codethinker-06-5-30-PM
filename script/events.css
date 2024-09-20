@@ -1,1 +1,11 @@
-/* Events */
+#banner {
+	background-image: url('../img/Sheep 1.png');
+	background-size: cover;
+	background-position: center center;
+	height: 60vh;
+}
+@media (min-width: 992px) {
+	#banner {
+		height:300vh;
+	}
+}
