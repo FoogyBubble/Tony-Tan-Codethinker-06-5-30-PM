@@ -9,20 +9,20 @@
 	<script src="script/contacts.js"></script>
 	<link href="script/bootstrap.css" rel="stylesheet" />
 	<link href="script/contacts.css" rel="stylesheet" />
-	<link href="img/favicon-bbcc.png" rel="icon" />
+	<link href="img/King Porker 2.png" rel="icon" />
 </head>
 <body class="bg-secondary bg-opacity-10" style="min-width:320px">
 	<header>
 		<nav class="navbar navbar-dark navbar-expand-lg bg-primary">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo-bbcc.png" alt="logo" class="d-inline-block" style="max-height:3rem">
+					<img src="img/King Porker 2.png" alt="logo" class="d-inline-block" style="max-height:3rem">
 					<span class="d-none d-sm-inline-block align-middle">King Porker<small class="d-block lh-xs fs-7">Primary School</small></span>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navlinks"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navlinks">
 					<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href="aboutus.html">Abouts Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
 						<li class="nav-item"><a class="nav-link" href="memberspotlight.html">Members Spotlight</a></li>
 						<li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
 						<li class="nav-item"><a class="nav-link" href="projects.html">Past Projects</a></li>
@@ -50,7 +50,27 @@
 		<!-- Key section -->
 		<form class="container py-3">
 			<div class="row gy-3">
-
+					
+					  <div class="col-7">
+					    <label for="firstname">First Name:</label>
+					    <input class="form-control is-invalid" type="text" id="firstname" name="FirstName" placeholder="example Ms Tracie" />
+                        <p id="firstnameError" class="text-danger">Please write your name so that we will be happy to help.</p>
+					  </div>
+				
+					  <div class="col-5">
+					    <label for="dob">Date of Birth:</label>
+					      <input class="form-control" type="date" id="dob" name="dateofbirth" placeholder="" />
+					  </div>
+				
+					    <label for="yourlifestory">Share your life story here!</label>
+					    <textarea class="form-control type="text" id="yourlifestory" rows="5" placeholder="Type your life story here."></textarea>
+				
+					    <label for="contactnumber">Contact number:</label>
+					    <input class="form-control" type="number" id="contactnumber" name="contactnumber" placeholder="Example 8033 4032" />
+					    <div class="pt-3 pb-3">
+						  <button type="submit" class="btn btn-success">Send!</button>
+					    </div>
+					
 			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
 		</form>

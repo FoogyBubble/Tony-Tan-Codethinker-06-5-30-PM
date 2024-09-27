@@ -46,11 +46,17 @@
     </script>
     <div class="container">
     <form>
-      First Name:
+      <label for="firstname">First Name:</label>
       <input class="form-control" type="text" id="firstname" name="FirstName" placeholder="example Ms Tracie" />
-      Date of Birth:
+
+      <label for="dob">Date of Birth:</label>
       <input class="form-control" type="date" id="dob" name="dateofbirth" placeholder="" />
-      <textarea class="form-control type="text" rows="5" placeholder="Type your life story here."></textarea>
+
+      <label for="yourlifestory">Share your life story here!</label>
+      <textarea class="form-control type="text" id="yourlifestory" rows="5" placeholder="Type your life story here."></textarea>
+
+      <label for="contactnumber">Contact number:</label>
+      <input class="form-control" type="number" id="contactnumber" name="contactnumber" placeholder="Example 8033 4032" />
       <div class="pt-3 pb-3">
         <button type="submit" class="btn btn-success">Send!</button>
       </div>
