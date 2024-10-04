@@ -46,9 +46,12 @@
     </script>
     <div class="container">
     <form>
-      <label for="firstname">First Name:</label>
-      <input class="form-control" type="text" id="firstname" name="FirstName" placeholder="example Ms Tracie" />
-
+      <div class="row">
+        <div class="col"></div>
+          <label for="firstname">First Name:</label>
+          <input class="form-control" type="text" id="firstname" name="FirstName" placeholder="example Ms Tracie" />
+          </div>
+      
       <label for="dob">Date of Birth:</label>
       <input class="form-control" type="date" id="dob" name="dateofbirth" placeholder="" />
 
@@ -58,7 +61,7 @@
       <label for="contactnumber">Contact number:</label>
       <input class="form-control" type="number" id="contactnumber" name="contactnumber" placeholder="Example 8033 4032" />
       <div class="pt-3 pb-3">
-        <button type="submit" class="btn btn-success">Send!</button>
+        <button type="submit" class="btn btn-success" onclick="validate();">Send!</button>
       </div>
     </form></div>
     <!-- Lesson 10 -->
@@ -137,5 +140,27 @@
     <h5 class="p3resilience prefects roboticsclub">h5 is smaller in text size compared to h4</h5>
     <h6 class="p3resilience">heading 6 is the smallest font</h6>
     <p id="jovan1234">Some more text. A new paragraph.</p>
+
+    <script>
+      let validate = () => {
+        let InputFirstName = document.getElementById("firstname");
+        console.log("Ok, thank you for typing in your first name.");
+
+        if (InputFirstName.value.length > 10) {
+          InputFirstName.classList = "form-control is-valid";
+          document.getElementById("firstnameError").classList = "text-danger d-none";
+        } else {
+          inputFirstName.classList = "form-control is-invalid"
+          document.getElementById("firstnameError").classList = "text-danger";
+        }
+      }
+
+      if (document.getElementsByClassName("is-invalid").length > 0) {
+        console.log("Is this correct?")
+      }
+      else {
+        console.log("Your form is submitted!")
+      }
+    </script>
   </body>
 </html>
