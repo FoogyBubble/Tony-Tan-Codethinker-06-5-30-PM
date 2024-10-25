@@ -146,7 +146,26 @@
     <li>Go to spa 3 times.</li>
     <li>Go ChatGPT.</li>
     <li>Make 3 new friends this year.</li>
+    <canvas id="drawingboard" width="800" height="600" class="border border-dark">
 
+    </canvas>
+    <script>
+      const canvas = document.getElementById("drawingboard");
+      console.log(canvas)
+
+      let context = canvas.getContext("2d");
+      console.log(context)
+
+      let gradient = context.createRadialGradient(80, 80, 0, 150, 150, 150);
+      gradient.addColorStop(0, "rgb(178,24,43)");
+      gradient.addColorStop(0.15, "rgb(249,223,200)");
+      gradient.addColorStop(0.16, "rgb(209,229,240)");
+      gradient.addColorStop(1, "rgb(7,46,108)");
+
+      context.fillStyle = gradient;
+      context.fillRect(14, 20, 324, 250)
+
+    </script>
     <script>
       let validate = () => {
         let InputFirstName = document.getElementById("firstname");
